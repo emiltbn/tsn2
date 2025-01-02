@@ -12,7 +12,7 @@ document.querySelector('.oke').addEventListener('click', function(event) {
     const selectedEvents = Array.from(eventChoices).map(choice => choice.value).join(', ') || 'Không có lựa chọn';
 
     // Gửi email qua EmailJS
-    emailjs.send("service_9ssbzte", "templates_ktvic95", {
+    emailjs.send("service_9ssbzte", "template_ktvic95", {
         email: email,
         time_from: timeFrom,
         time_to: timeTo,
